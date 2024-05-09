@@ -3,7 +3,9 @@ This is intended to take a set of values (reader number, RFID Key) then authenti
 Eventually this will also have registration and logging functions.
 
 Basic database structure should look like the following:
+
 Name | RFID Tag | Access to Door1 | Access to Door2 | Access to Door3 | Etc.
 
 Logging will append the following data to a file:
+
 Time | Name | RFID Tag | Door Attempted to Access | Success/Failure
