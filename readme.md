@@ -1,10 +1,16 @@
-This is intended to take a set of values (reader number, RFID Key) then authenticate them against a MongoDB database. If the validation is a success, it will pass the order to open the door to another program.
+This is intended to take a set of values (reader number, RFID Key) then authenticate them against a text file database. If the validation is a success, it will pass the order to open the door to another program.
 
-Eventually this will also have registration and logging functions.
+Currently this is set to work with a single reader. The format is as follows:
 
-Basic database structure should look like the following:
+RFID_tag Lastname,Firstname
 
-Name | RFID Tag | Access to Door1 | Access to Door2 | Access to Door3 | Etc.
+Authentication attemtps will log to a file called scan.log
+
+Eventually this will also have registration functions.
+
+Once I expand this to multiple doors, the basic database structure should look like the following:
+
+RFID Tag | Name | Access to Door1 | Access to Door2 | Access to Door3 | Etc.
 
 Logging will append the following data to a file:
 
